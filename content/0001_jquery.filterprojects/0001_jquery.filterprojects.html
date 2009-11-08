@@ -7,10 +7,13 @@
 <div class="post-content">
   
   <p>
-    Algunos ejemplos de uso del plugin jquery.filterprojects. Para descargar la última versión date una vuelta por <a href="http://github.com/mamuso/jquery.filterprojects">github</a>.
+    Un par de ejemplos de uso del plugin jquery.filterprojects. Para descargar la última versión date una vuelta por <a href="http://github.com/mamuso/jquery.filterprojects">github</a>.
   </p>
   
   <h2>Autores / Editoriales / Año</h2>
+  <p>
+    El uso por defecto muestra los hijos que contengan la intersección de los 3 grupos de filtro definido. La aparición y desaparición es aleatoria, aunque se puede definir tanto el pulso entre efectos y su duración.
+  </p>
   <pre name="code" class="javascript">
     $("#books").filterprojects({
       filterTagSelector: [ '#author a', '#genre a', '#year a' ]
@@ -62,6 +65,88 @@
         <li class="ellroy 1995 crime"><img src="files/001/american-tabloid.jpg" width="120" height="130" alt="American Tabloid"/></li>
       </ul>
     </div>
+</div>
+
+  <h2>Filtro de posts por tema</h2>
+  <p>
+    Un uso más simple, con sólo un selector para filtrar y diciendo que la aparición y desaparición no sea aleatoria.
+  </p>
+  <pre name="code" class="javascript">
+    $("#posts").filterprojects({
+      animationSpeed: 1000,
+      animationPulse: 80,
+      randomize: false,
+      show: { height: 'show' },
+      hide: { height: 'hide' },
+      filterTagSelector: [ '#issues a' ]
+    });
+  </pre>
+  <div id="example2">
+    <div class="navigation">
+      <strong>Hablemos de...</strong>
+      <ul id="issues">
+        <li><a href="#" class="all active">Cualquier cosa</a></li>
+        <li><a href="#html">html</a></li>
+        <li><a href="#css">css</a></li>
+        <li><a href="#javascript">javascript</a></li>
+        <li><a href="#magia">magia</a></li>
+        <li><a href="#ciencia">ciencia</a></li>
+        <li><a href="#chorradas">chorradas</a></li>
+      </ul>
+    </div><!-- .navigation -->
+    
+    <div class="main">
+      <ul id="posts">
+        <li class="ciencia css chorradas">
+          <span>
+            <strong>Por fin una técnica que permite bordes redondeados crossbrowser y eficiente!</strong>
+            ahora a por la paz en el mundo.
+          </span>
+        </li>
+        <li class="magia chorradas">
+          <span>
+            <strong>Un señor hace desaparecer un billete de 50 euros</strong>
+            "y no me ha costado nada" ha declarado hace un momento
+          </span>
+        </li>
+        <li class="ciencia">
+          <span>
+            <strong>Lo del colisionador de hadrones va para largo</strong>
+            mientras tanto tomemos unos bocatas
+          </span>
+        </li>
+        <li class="javascript html css">
+          <span>
+            <strong>Curso sobre frontend el x del x en x</strong>
+            seremos breves y sobre todo concretos
+          </span>
+        </li>
+        <li class="magia">
+          <span>
+            <strong>Cañas con tapa por menos de un euro</strong>
+            oh!
+          </span>
+        </li>
+        <li class="chorradas">
+          <span>
+            <strong>"Arenal de Sevilla y ole! Torre del Oro"</strong>
+            escalofriantes declaraciones
+          </span>
+        </li>
+        <li class="css chorradas">
+          <span>
+            <strong>y dijo "display:none"</strong>
+            desde entonces no lo encuentro
+          </span>
+        </li>
+        <li class="javascript">
+          <span>
+            <strong>alert("hello world!")</strong>
+            nunca fue un chico especialmente original
+          </span>
+        </li>
+      </ul>
+    </div>
     
   </div>
 </div>
@@ -76,6 +161,17 @@
       $("#books").filterprojects({
         filterTagSelector: [ '#author a', '#genre a', '#year a' ]
       });
+      
+      // example2
+      $("#posts").filterprojects({
+        animationSpeed: 1200,
+        animationPulse: 180,
+        randomize: false,
+        show: { height: 'show', opacity: 'show' },
+        hide: { height: 'hide', opacity: 'hide' },
+        filterTagSelector: [ '#issues a' ]
+      });
+      
     });
   </script>
 <% end %>

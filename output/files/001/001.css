@@ -1,6 +1,6 @@
 /* example 1 */
 #example1 {
-  padding: 1em 0;
+  padding: 1em 0 5em 0;
   height: 1%;
   overflow: hidden;
 }
@@ -58,3 +58,66 @@
   color: #FFFFFF;
   background: #666666;
 }
+
+
+
+/* example 2 */
+#example2 {
+  padding: 1em 0 5em 0;
+  height: 1%;
+  overflow: hidden;
+}
+
+#example2 .navigation {
+  width: 10em;
+  overflow: hidden;
+  float: left;
+}
+
+#example2 .navigation ul {
+  padding: 0 0 0 0;
+  list-style: none;
+  text-align: center;
+}
+
+#example2 .navigation ul li {
+  display: inline;
+  list-style: none;
+}
+
+#example2 .navigation ul li a.active{
+  background: #999999;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#example2 .main {
+  float: left;
+  width: 39em;
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+#example2 .main ul {
+  padding: 0 0 0 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+#example2 .main ul li {
+  display: block;
+  border-bottom: 1px solid #f2f2f2;
+  background: #FFFFFF;
+  color: #666666;
+}
+
+#example2 .main ul li span {
+  display: block;
+  padding: 0.4em 1em;
+}
+
+#example2 .main ul li strong {
+  font-size: 1.1em;
+  display: block;
+  color: #333;
+}
+
