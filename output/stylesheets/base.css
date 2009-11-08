@@ -240,8 +240,8 @@ img.avatar_comentario {
 .dp-highlighter ol li,
 .dp-highlighter ol li span 
 {
-	margin: 0;
-	padding: 0;
+	margin: 0!important;
+	padding: 0!important;
 	border: none;
 }
 
