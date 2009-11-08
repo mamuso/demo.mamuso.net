@@ -1,0 +1,60 @@
+/* example 1 */
+#example1 {
+  padding: 1em 0;
+  height: 1%;
+  overflow: hidden;
+}
+
+#example1 .navigation {
+  width: 10em;
+  overflow: hidden;
+  float: left;
+}
+
+#example1 .main {
+  float: left;
+  width: 39em;
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+#example1 .main ul {
+  padding: 0 0 0 0;
+}
+
+#example1 .main ul li {
+  float: left;
+  display: inline;
+  margin: 0 0.5em 0.5em 0;
+}
+
+#example1 .navigation strong {
+  display: block;
+  color: #999999;
+}
+
+#example1 .navigation ul {
+  height: 1%;
+  overflow: hidden;
+  padding: 0 0 1em 0;
+  list-style: none;
+}
+
+#example1 .navigation ul li {
+  float: left;
+  display: inline;
+  padding-bottom :0.1em;
+}
+
+#example1 .navigation ul li a {
+  float: left;
+  font-size: 0.9em;
+  padding: 0.2em 0.3em;
+  margin: 0 0.3em 0.3em 0;
+  background: #FFFFFF;
+}
+
+#example1 .navigation ul li a.active {
+  color: #FFFFFF;
+  background: #666666;
+}
