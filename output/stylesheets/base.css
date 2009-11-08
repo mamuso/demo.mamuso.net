@@ -1,0 +1,412 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    font-variant: normal;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    text-align: center;
+    background: #D3D3D3 url("http://s3.amazonaws.com/lcp/mamuso/myfiles/assets/mainbg.gif") top left;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  border: none;
+}
+
+hr, #lc_mb, .accessible { display: none; }
+
+a { color: #BC0061;}
+
+h1, h2,
+.post .post-metadata .comments,
+.related-posts strong,
+.comment-form strong {
+  font-family: "colaborate-1","colaborate-2",sans-serif;
+}
+
+.wrapper {
+  width: 77.1em;
+  margin: 0 auto;
+}
+
+#overcont {
+  padding: 2em 0;
+  background: url("http://s3.amazonaws.com/lcp/mamuso/myfiles/assets/mainbgdeg.png") repeat-x top left;
+}
+
+#content {
+  background: #F2F2F2;
+  text-align: left;
+}
+
+#header {
+  padding: 1em 0 0 0;
+}
+
+#header .logo {
+  position: relative;
+  left: -0.7em;
+  width: 20em;
+  height: 7.2em;
+  display: block;
+  overflow: hidden;
+  text-indent: -90000em;
+  background: url("http://s3.amazonaws.com/lcp/mamuso/myfiles/assets/logomini.gif") no-repeat left top;
+}
+
+.post {
+  padding-bottom: 3em;
+}
+
+.post .heading {
+  position: relative;
+  left: -0.7em;
+  padding: 2.4em 6em 2em 6.5em; 
+  background: url("http://s3.amazonaws.com/lcp/mamuso/myfiles/assets/fold.png") no-repeat top left;
+}
+
+.post .heading h1,
+.post .heading h2 {
+  font-weight: normal;
+  font-size: 2.5em;
+  padding-bottom: 0.3em;
+  color: #2A2A2A;
+}
+
+.post .heading h1 a,
+.post .heading h2 a {
+  color: #2A2A2A;
+}
+
+.post .heading .metadata {
+  font-size: 1.2em;
+}
+
+.post .post-content {
+  font-size: 1.3em;
+  line-height: 130%;
+  padding: 0em 4.5em 1em;
+}
+
+.post .post-content p {
+  padding-bottom: 1.1em
+}
+
+.post .post-content ul,
+.post .post-content ol {
+  padding: 0 0 1.1em 2em;
+}
+
+.post .post-content ol.dp-rb {
+  padding: 0 0 0 0;
+}
+
+.post .post-metadata {
+  font-size: 1.3em;
+  line-height: 130%;
+  padding: 0em 4.5em 1em;
+  color: #646464;
+}
+
+.post .post-metadata .comments {
+  position: relative;
+  background: #C5C5C5;
+  float: left;
+  display: inline;
+  padding: 0.4em 0.5em;
+  margin: 0 0.4em 0 0;
+  font-size: 2em;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -icab-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  text-decoration: none;
+  color: #313135;
+}
+
+
+.post .post-metadata .comments img {
+  position: absolute;
+  left: 37%;
+  bottom: -6px;
+}
+
+.pagination {
+  font-size: 1.3em;
+  padding: 2em 4.5em 2em;
+  height: 1%;
+  overflow: hidden;
+  text-align: right;
+  color: #646464;
+}
+
+.pagination .previous {
+  float: left;
+}
+
+img.imgdcha, img.imgDer {
+  border:8px solid #999999;
+  float:right;
+  margin:6px 6px 6px 11px;
+  padding:0;
+}
+
+img.imgizqda, img.imgIzq {
+  border:8px solid #999999;
+  float:left;
+  margin:0 14px 6px 0;
+  padding:0px;
+}
+
+img.imgcen, img.imgCen {
+  border:8px solid #999999;
+  display:block;
+  margin:0 auto 20px;
+  padding:0px;
+}
+
+img.avatar_comentario {
+  border:2px solid #999999;
+  float:right;
+  margin:10px 5px 0 0;
+  padding:0px;
+}
+
+#footer {
+  padding: 1em;
+  text-align: right;
+}
+
+
+.submit {
+  font-family: arial, sans-serif;
+  border: 1px solid #BC0061;
+  background: #BC0061;
+  padding: 0.3em 0.7em;
+  color: #FFFFFF;
+  font-size: 1em;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -icab-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.post .post-content ul.toc {
+  padding: 0;
+  list-style: none;
+  color: #999999;
+}
+
+.toc li {
+  padding: 0;
+  list-style: none;
+  color: #999999;
+}
+
+.toc li a {
+  font-size: 1.3em;
+  display: block;
+}
+
+
+
+
+/* Syntax highlighter */
+
+.dp-highlighter
+{
+	font-family: "Consolas", "Courier New", Courier, mono, serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	width: 99%;
+	overflow: auto;
+	margin: 18px 0 18px 0 !important;
+	padding-top: 1px; /* adds a little border on top when controls are hidden */
+}
+
+/* clear styles */
+.dp-highlighter ol,
+.dp-highlighter ol li,
+.dp-highlighter ol li span 
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.dp-highlighter a,
+.dp-highlighter a:hover
+{
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dp-highlighter .bar
+{
+	padding-left: 45px;
+}
+
+.dp-highlighter.collapsed .bar,
+.dp-highlighter.nogutter .bar
+{
+	padding-left: 0px;
+}
+
+.dp-highlighter ol
+{
+	list-style: decimal; /* for ie */
+	background-color: #fff;
+	margin: 0px 0px 1px 45px !important; /* 1px bottom margin seems to fix occasional Firefox scrolling */
+	padding: 0px;
+	color: #5C5C5C;
+}
+
+.dp-highlighter.nogutter ol,
+.dp-highlighter.nogutter ol li
+{
+	list-style: none !important;
+	margin-left: 0px !important;
+}
+
+.dp-highlighter ol li,
+.dp-highlighter .columns div
+{
+	list-style: decimal-leading-zero; /* better look for others, override cascade from OL */
+	list-style-position: outside !important;
+	border-left: 3px solid #DC91B8;
+	background-color: #F8F8F8;
+	color: #5C5C5C;
+	padding: 0 3px 0 10px !important;
+	margin: 0 !important;
+	line-height: 14px;
+}
+
+.dp-highlighter.nogutter ol li,
+.dp-highlighter.nogutter .columns div
+{
+	border: 0;
+}
+
+.dp-highlighter .columns
+{
+	background-color: #F8F8F8;
+	color: gray;
+	overflow: hidden;
+	width: 100%;
+}
+
+.dp-highlighter .columns div
+{
+	padding-bottom: 5px;
+}
+
+.dp-highlighter ol li.alt
+{
+	background-color: #FFF;
+	color: inherit;
+}
+
+.dp-highlighter ol li span
+{
+	color: black;
+	background-color: inherit;
+}
+
+/* Adjust some properties when collapsed */
+
+.dp-highlighter.collapsed ol
+{
+	margin: 0px;
+}
+
+.dp-highlighter.collapsed ol li
+{
+	display: none;
+}
+
+/* Additional modifications when in print-view */
+
+.dp-highlighter.printing
+{
+	border: none;
+}
+
+.dp-highlighter.printing .tools
+{
+	display: none !important;
+}
+
+.dp-highlighter.printing li
+{
+	display: list-item !important;
+}
+
+/* Styles for the tools */
+
+.dp-highlighter .tools
+{
+	padding: 3px 8px 3px 10px;
+	font: 9px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: silver;
+	background-color: #f8f8f8;
+	padding-bottom: 10px;
+	border-left: 3px solid #DC91B8;
+}
+
+.dp-highlighter.nogutter .tools
+{
+	border-left: 0;
+}
+
+.dp-highlighter.collapsed .tools
+{
+	border-bottom: 0;
+}
+
+.dp-highlighter .tools a
+{
+	font-size: 9px;
+	color: #a0a0a0;
+	background-color: inherit;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.dp-highlighter .tools a:hover
+{
+	color: red;
+	background-color: inherit;
+	text-decoration: underline;
+}
+
+/* About dialog styles */
+
+.dp-about { background-color: #fff; color: #333; margin: 0px; padding: 0px; }
+.dp-about table { width: 100%; height: 100%; font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; }
+.dp-about td { padding: 10px; vertical-align: top; }
+.dp-about .copy { border-bottom: 1px solid #ACA899; height: 95%; }
+.dp-about .title { color: red; background-color: inherit; font-weight: bold; }
+.dp-about .para { margin: 0 0 4px 0; }
+.dp-about .footer { background-color: #ECEADB; color: #333; border-top: 1px solid #fff; text-align: right; }
+.dp-about .close { font-size: 11px; font-family: Tahoma, Verdana, Arial, sans-serif !important; background-color: #ECEADB; color: #333; width: 60px; height: 22px; }
+
+/* Language specific styles */
+
+.dp-highlighter .comment, .dp-highlighter .comments { color: #DC91B8; background-color: inherit; }
+.dp-highlighter .string { color: blue; background-color: inherit; }
+.dp-highlighter .keyword { color: #069; font-weight: bold; background-color: inherit; }
+.dp-highlighter .preprocessor { color: gray; background-color: inherit; }
+

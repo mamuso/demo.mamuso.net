@@ -1,11 +1,21 @@
+<div class="heading">
+    <h2>Índice de demos</h2>
+    <span class="metadata">:)</span>
+</div>
+<div class="post-content">
+  
+  <ul class="toc">
+    <% @pages.each do |page| %>
+      <% unless page.skip_output == true || page.title == "Índice de contenidos"  %>
+      <li>
+        <a href=".<%= page.path %>"><%= page.title.nil? ? page.path : page.title %></a>
+        <span><%= page.path %></span>
+      </li>
+      <% end %>
+    <% end %> 
+  </ul>
+  
+</div>
 
-<ul>
-  <% @pages.each do |page| %>
-    <% unless page.skip_output == true  %>
-    <li>
-      <a href=".<%= page.path %>"><%= page.title.nil? ? page.path : page.title %></a>
-      <span><%= page.path %></span>
-    </li>
-    <% end %>
-  <% end %> 
-</ul>
+<% content_for :footer do %>  
+<% end %>
