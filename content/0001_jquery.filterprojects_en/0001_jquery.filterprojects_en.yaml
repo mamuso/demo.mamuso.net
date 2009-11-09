@@ -1,7 +1,7 @@
 # Built-in
 
 # Custom 
-title: 0001 jquery.filterprojects demo
+title: 0001 jquery.filterprojects demo (english)
 related: http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects
 repository: http://github.com/mamuso/jquery.filterprojects
 filters_pre: erb

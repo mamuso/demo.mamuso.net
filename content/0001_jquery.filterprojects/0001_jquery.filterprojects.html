@@ -1,11 +1,13 @@
 <div class="heading">
     <h2>jquery.filterprojects demo</h2>
     <% if @page.related %>
-      <span class="metadata">Post relacionado: <a href="<%= @page.related %>"><%= @page.related %></a></span>
+      <span class="metadata">Post relacionado: <a href="<%= @page.related %>"><%= @page.related %></a></span><br/>
+    <% end %>
+    <% if @page.repository %>
+      <span class="metadata">Descárgatelo: <a href="<%= @page.related %>"><%= @page.repository %></a></span>
     <% end %>
 </div>
 <div class="post-content">
-  
   <p>
     Un par de ejemplos de uso del plugin jquery.filterprojects. Para descargar la última versión date una vuelta por <a href="http://github.com/mamuso/jquery.filterprojects">github</a>.
   </p>
