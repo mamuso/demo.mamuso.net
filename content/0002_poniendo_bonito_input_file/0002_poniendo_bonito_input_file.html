@@ -1,0 +1,42 @@
+<div class="heading">
+  <h2>Poniendo bonito un input file</h2>
+  <% if @page.related %>
+  <span class="metadata">Post relacionado: <a href="<%= @page.related %>"><%= @page.related %></a></span><br/>
+  <% end %>
+  <% if @page.repository %>
+  <span class="metadata">Descárgatelo: <a href="<%= @page.related %>"><%= @page.repository %></a></span>
+  <% end %>
+</div>
+<div class="post-content">
+
+  
+  
+  <span id="customfile">
+    <input type="file" name="file" size="1"/>
+  </span>
+  <span id="customfile-fake">
+    <span id="customfile-fake-name">Elige un archivo</span>
+    <button>Seleccionar</button>
+  </span>
+  
+</div>
+
+  <% content_for :footer do %>
+  <link rel="stylesheet" href="files/002/002.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  
+  
+  <script type="text/javascript" charset="utf-8">
+    window.onload = function() {
+      var input1 = document.getElementById("customfile"),
+          fake1 = document.getElementById("customfile-fake")
+      
+      if(input1 !== null && fake1 !== null) {
+        fake1.className = "active";
+        input1.className = "active";
+        input1.children[0].onchange = function() {
+          document.getElementById("customfile-fake-name").innerHTML = this.value;
+        }
+      }
+    }
+  </script>
+  <% end %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <title>Índice de contenidos - demo.mamuso.net</title>
+  <title>0002 poniendo bonito un input file demo - demo.mamuso.net</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <script type="text/javascript" src="http://use.typekit.com/erl0mqu.js"></script>
@@ -20,41 +20,27 @@
         
         <div class="post">
           <div class="heading">
-    <h2>Índice de demos</h2>
-    <span class="metadata">:)</span>
+  <h2>Poniendo bonito un input file</h2>
+  
+  <span class="metadata">Post relacionado: <a href="http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects">http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects</a></span><br/>
+  
+  
 </div>
 <div class="post-content">
+
   
-  <ul class="toc">
-    
-      
-      <li>
-        <a href="./0001_jquery.filterprojects.html">0001 jquery.filterprojects demo</a>
-        <span>/0001_jquery.filterprojects.html</span>
-      </li>
-      
-    
-      
-      <li>
-        <a href="./0001_jquery.filterprojects_en.html">0001 jquery.filterprojects demo (english)</a>
-        <span>/0001_jquery.filterprojects_en.html</span>
-      </li>
-      
-    
-      
-      <li>
-        <a href="./0002_poniendo_bonito_input_file.html">0002 poniendo bonito un input file demo</a>
-        <span>/0002_poniendo_bonito_input_file.html</span>
-      </li>
-      
-    
-      
-     
-  </ul>
+  
+  <span id="customfile">
+    <input type="file" name="file" size="1"/>
+  </span>
+  <span id="customfile-fake">
+    <span id="customfile-fake-name">Elige un archivo</span>
+    <button>Seleccionar</button>
+  </span>
   
 </div>
 
-
+  
         </div><!-- post -->
         
         <hr/>
@@ -67,8 +53,25 @@
     </div>
   </div>
 
-    
-
+  
+  <link rel="stylesheet" href="files/002/002.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  
+  
+  <script type="text/javascript" charset="utf-8">
+    window.onload = function() {
+      var input1 = document.getElementById("customfile"),
+          fake1 = document.getElementById("customfile-fake")
+      
+      if(input1 !== null && fake1 !== null) {
+        fake1.className = "active";
+        input1.className = "active";
+        input1.children[0].onchange = function() {
+          document.getElementById("customfile-fake-name").innerHTML = this.value;
+        }
+      }
+    }
+  </script>
+  
 
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
