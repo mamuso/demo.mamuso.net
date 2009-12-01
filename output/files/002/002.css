@@ -1,0 +1,140 @@
+/* # Because we need pretty file inputs
+----------------------------------------------------- */
+body {
+  font-family: arial, sans-serif;
+  font-size: x-small;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: #333333;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  font-size: x-small;
+}
+
+:focus, :active { outline: 0; }
+
+/* Example 1 */
+
+form#example1 {
+  width: 35em;
+  padding: 2em;
+  background: #E9F1B4;
+  margin: 1em auto;
+  text-align: left;
+  overflow: hidden;
+}
+
+form#example1 .pf_wrap_class {
+  height: 1%;
+  overflow: hidden;
+}
+
+form#example1 .pf_ph_cont {
+  width: 34em;
+  float: left;
+  overflow: hidden;
+}
+
+form#example1 .pf_ph_cont strong {
+  float: left;
+  font-size: x-small;
+  padding: 0 0 0 0;
+  width: 13.9em;
+  height: 2.9em;
+  background: url('button.png') no-repeat center center;
+}
+
+form#example1 .pf_ph_cont strong span {
+  display: none;
+}
+
+form#example1 .pf_ph {
+  float: left;
+  font-size: 1.2em;
+  padding: 0.5em;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 15.5em;
+}
+
+/* Example 2 */
+
+form#example2 {
+  width: 35em;
+  padding: 2em;
+  background: #BAD1F0;
+  margin: 1em auto;
+  text-align: center;
+}
+
+form#example2 .pf_wrap_class {
+  margin: 0 auto;
+}
+
+form#example2 .pf_ph_cont strong {
+  display: block;
+  width: 11.5em;
+  height: 3.5em;
+  background: url('nofile_cool.png') no-repeat center top;
+}
+
+form#example2 .selected .pf_ph_cont strong {
+  background: url('nofile_cool.png') no-repeat center bottom;
+}
+
+form#example2 .pf_ph_cont strong span {
+  display: none;
+}
+
+/* Example 3 */
+
+form#example3 {
+  width: 35em;
+  padding: 2em;
+  background: #E8BED1;
+  margin: 1em auto;
+  text-align: center;
+}
+
+form#example3 .pf_wrap_class {
+  margin: 0 auto;
+}
+
+form#example3 .pf_ph_cont {
+  display: block;
+  width: 30em;
+  overflow: hidden;
+}
+form#example3 .pf_ph_cont strong {
+  display: inline;
+  float: right;
+  width: 11.5em;
+  height: 3.5em;
+  background: url('browse.png') no-repeat center top;
+}
+
+form#example3 .pf_ph {
+  float: left;
+  text-align: left;
+  background:#FFFFFF;
+  font-size: 1.3em;
+  color:#666666;
+  padding: 0.7em;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 12.5em;
+  border: 1px solid #CCCCCC;
+}
+
+form#example3 .pf_ph_cont strong span {
+  display: none;
+}

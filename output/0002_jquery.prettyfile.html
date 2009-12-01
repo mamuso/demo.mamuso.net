@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-  <title>Índice de contenidos - demo.mamuso.net</title>
+  <title>0002 jquery.prettyfile demo - demo.mamuso.net</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <script type="text/javascript" src="http://use.typekit.com/erl0mqu.js"></script>
@@ -20,39 +20,35 @@
         
         <div class="post">
           <div class="heading">
-    <h2>Índice de demos</h2>
-    <span class="metadata">:)</span>
+  <h2>jquery.prettyfile demo</h2>
+  
+  <span class="metadata">Post relacionado: <a href="http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects">http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects</a></span><br/>
+  
+  
+  <span class="metadata">Descárgatelo: <a href="http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects">http://github.com/mamuso/jquery.prettyfile</a></span>
+  
 </div>
 <div class="post-content">
+  <p>
+    Ejemplos de uso del plugin jquery.prettyfile. Para descargar la última versión date una vuelta por <a href="http://github.com/mamuso/jquery.prettyfile">github</a>.
+  </p>
   
-  <ul class="toc">
-    
-      
-      <li>
-        <a href="./0001_jquery.filterprojects.html">0001 jquery.filterprojects demo</a>
-        <span>/0001_jquery.filterprojects.html</span>
-      </li>
-      
-    
-      
-      <li>
-        <a href="./0001_jquery.filterprojects_en.html">0001 jquery.filterprojects demo (english)</a>
-        <span>/0001_jquery.filterprojects_en.html</span>
-      </li>
-      
-    
-      
-      <li>
-        <a href="./0002_jquery.prettyfile.html">0002 jquery.prettyfile demo</a>
-        <span>/0002_jquery.prettyfile.html</span>
-      </li>
-      
-    
-      
-     
-  </ul>
+  <form action="#" method="post" accept-charset="utf-8" id="example1">
+    <input type="file" name="wadus" id="clip"/>
+
+  </form>
+
+  <form action="#" method="post" accept-charset="utf-8" id="example2">
+    <input type="file" name="wadus" id="myfile"/>
+  </form>
+
+  <form action="#" method="post" accept-charset="utf-8" id="example3">
+    <input type="file" name="wadus" id="browse"/>
+  </form>
   
-</div>
+  </div>
+
+  
 
 
         </div><!-- post -->
@@ -67,8 +63,32 @@
     </div>
   </div>
 
-    
+  
+  <link rel="stylesheet" href="files/002/002.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" charset="utf-8"></script>
+  
+  <script src="javascripts/jquery.prettyfile.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function(){
+      // example 1
+      $("#clip").prettyfile({
+        html: "<strong><span>Choose File</span></strong><span class='pf_ph'>Choose a file</span>"
+      });
 
+      // example 2
+      $("#myfile").prettyfile({
+        setvalue: false,
+        html: "<strong><span>Choose File</span></strong>"
+      });
+
+      // example 3
+      $("#browse").prettyfile({
+        html: "<span class='pf_ph'>Select a file</span><strong><span>Browse</span></strong>"
+      });
+
+    });
+  </script>
+  
 
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

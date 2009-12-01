@@ -1,0 +1,7 @@
+# Built-in
+
+# Custom 
+title: 0002 jquery.prettyfile demo
+related: http://mamuso.net/post/2009/11/08/filtrando-clases-con-jquery-filterprojects
+repository: http://github.com/mamuso/jquery.prettyfile
+filters_pre: erb
